@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact Me | Rakib Hasan</title>
+<link rel="stylesheet" href="/CSS/main.css" />
+<script defer src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="/index.html" class="brand">Ra<span class="highlight">K</span>ib</a>
+    <button id="menu-btn" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="/HTML/education.html">Education</a></li>
+      <li><a href="/HTML/experience.html">Experience</a></li>
+      <li><a href="/HTML/project.html">Projects</a></li>
+      <li><a href="/HTML/contactme.html" class="active">Contact Me</a></li>
+    </ul>
+    <button id="dark-mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+
+    <form class="contact-form" method="post" action="#">
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <fieldset class="form-group">
+        <legend>Meeting Type:</legend>
+        <label><input type="radio" name="meeting" value="Normal" required /> Normal Meet</label>
+        <label><input type="radio" name="meeting" value="Coffee" /> Coffee Meet</label>
+        <label><input type="radio" name="meeting" value="Work" /> Talk about Work/Job</label>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <legend>Working Category:</legend>
+        <label><input type="checkbox" name="category" value="Projects" /> Projects</label>
+        <label><input type="checkbox" name="category" value="Research" /> Research</label>
+        <label><input type="checkbox" name="category" value="Web Developing" /> Web Developing</label>
+      </fieldset>
+
+      <div class="form-group">
+        <label for="consulting">Consulting Date:</label>
+        <input type="date" id="consulting" name="consulting" required />
+      </div>
+
+      <div class="form-buttons">
+        <input type="submit" value="Register" />
+        <input type="reset" value="Refresh" />
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-social">
+    <a href="https://www.facebook.com/r.a.kib.436238" target="_blank" rel="noopener" aria-label="Facebook Profile">
+      <img src="/images/Facebook" alt="Facebook" />
+    </a>
+    <a href="https://github.com/rakib75464" target="_blank" rel="noopener" aria-label="GitHub Profile">
+      <img src="/images/images.jpeg" alt="GitHub" />
+    </a>
+  </div>
+  <p>© 2025 Md Rakib Hasan. All rights reserved.</p>
+</footer>
+</body>
+</html>
