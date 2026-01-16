@@ -35,27 +35,22 @@ Contributing
 
 License
 
-🎯 Project Overview
+Project Overview
 My Portfolio Website is a fully responsive, multi-page personal portfolio built with pure HTML, CSS, and JavaScript. It showcases my educational background, professional experiences, technical projects, and research work in a modern, accessible interface. The website features a toggleable dark/light mode, mobile-responsive navigation, and interactive elements.
 
 Key Objectives
-✅ Present professional profile in an organized manner
+Present professional profile in an organized manner
 
-✅ Showcase technical skills and projects effectively
+Showcase technical skills and projects effectively
 
-✅ Provide easy contact mechanism for potential employers/clients
+Provide easy contact mechanism for potential employers/clients
 
-✅ Ensure accessibility and cross-browser compatibility
+Ensure accessibility and cross-browser compatibility
 
-✅ Maintain fast loading times and responsive design
+Maintain fast loading times and responsive design
 
-🌐 Live Demo
-You can view the live portfolio at:
-[Your GitHub Pages URL Here]
-(Example: https://rakib75464.github.io/My-Portfolio/)
-
-✨ Features
-🎨 Design Features
+Features
+Design Features
 Dual Theme System: Switch between light and dark modes with persistent user preference
 
 Responsive Layout: Fully responsive design across all device sizes
@@ -66,7 +61,7 @@ Accessibility: ARIA labels, semantic HTML, and keyboard navigation support
 
 Cross-browser Compatibility: Tested on Chrome, Firefox, Safari, and Edge
 
-📱 Interactive Elements
+Interactive Elements
 Mobile-Friendly Navigation: Hamburger menu for smaller screens
 
 Hover Effects: Interactive hover states on buttons and cards
@@ -77,7 +72,7 @@ Smooth Transitions: CSS animations for enhanced user experience
 
 Active State Indicators: Visual cues for current page
 
-📊 Content Organization
+Content Organization
 Multi-page Structure: Separate pages for different content categories
 
 Project Gallery: Visual showcase of projects with descriptions
@@ -88,7 +83,7 @@ Skills Matrix: Organized display of technical competencies
 
 Contact System: Interactive contact form with various meeting options
 
-🛠️ Technology Stack
+Technology Stack
 Frontend
 HTML5: Semantic markup, form elements, and structure
 
@@ -142,7 +137,7 @@ My-Portfolio/
     ├── education_logos/          # Educational institution logos
     ├── project_screenshots/      # Project demonstration images
     └── experience_images/        # Experience-related images
-🚀 Setup & Installation
+Setup & Installation
 Prerequisites
 Code Editor: VS Code, Sublime Text, or any modern editor
 
@@ -194,7 +189,7 @@ Simulates real web server environment
 
 Allows testing of form submissions
 
-💻 Running the Project
+Running the Project
 Development Mode
 Start local server as shown above
 
@@ -218,17 +213,17 @@ Hover Effects: Hover over buttons, skill items, and project cards
 Browser Compatibility Testing
 The website is tested on:
 
-✅ Chrome 90+
+Chrome 90+
 
-✅ Firefox 88+
+Firefox 88+
 
-✅ Safari 14+
+Safari 14+
 
-✅ Edge 90+
+Edge 90+
 
-✅ Mobile Chrome/Safari
+Mobile Chrome/Safari
 
-🎨 Customization Guide
+Customization Guide
 1. Personal Information
 Edit the following files:
 
@@ -272,7 +267,7 @@ Form submission handling
 
 Enhanced animations
 
-🌐 Deployment Guide
+Deployment Guide
 GitHub Pages (Free & Recommended)
 bash
 # 1. Create GitHub repository
@@ -305,7 +300,7 @@ Automatic optimization
 
 Edge network deployment
 
-📄 File Explanations
+File Explanations
 Core Files
 index.html - Main Landing Page
 Homepage with hero section and introduction
@@ -361,7 +356,7 @@ Multiple input types (text, email, radio, checkbox, date)
 
 Form validation and submission handling
 
-🎨 Design Specifications
+Design Specifications
 Color Palette
 css
 Light Theme:
@@ -416,7 +411,7 @@ Navigation: Fixed header with smooth transitions
 
 Skill Tags: Pill-shaped with color coding
 
-🔧 Development Notes
+Development Notes
 Code Architecture
 Separation of Concerns: HTML (structure), CSS (style), JS (behavior)
 
@@ -444,7 +439,7 @@ Keyboard Navigation: Focus states and tab order
 
 Color Contrast: WCAG 2.1 AA compliant
 
-🐛 Troubleshooting
+Troubleshooting
 Common Issues & Solutions
 1. Styles Not Loading
 bash
@@ -498,17 +493,17 @@ Validate HTML at validator.w3.org
 
 Check CSS at jigsaw.w3.org/css-validator
 
-⚡ Performance Optimization
+Performance Optimization
 Current Optimizations
-✅ Minimal external dependencies
+Minimal external dependencies
 
-✅ Optimized image sizes
+Optimized image sizes
 
-✅ CSS and JS in single files
+CSS and JS in single files
 
-✅ Deferred JavaScript loading
+Deferred JavaScript loading
 
-✅ Proper caching headers (if configured)
+Proper caching headers (if configured)
 
 Further Optimization Options
 Image Optimization
@@ -530,7 +525,7 @@ Set appropriate cache-control headers
 
 Use CDN for static assets
 
-🔮 Future Enhancements
+Future Enhancements
 Planned Features
 Backend Integration
 
@@ -566,7 +561,7 @@ SEO optimization with structured data
 
 Sitemap generation
 
-🤝 Contributing
+Contributing
 While this is a personal portfolio project, contributions are welcome for:
 
 Bug Reports: Open an issue with detailed reproduction steps
@@ -614,7 +609,7 @@ Facebook: Rakib Hasan
 
 Email: rakibss974@gmail.com
 
-🎯 Quick Start Summary
+Quick Start Summary
 Clone: git clone https://github.com/rakib75464/My-Portfolio.git
 
 Navigate: cd My-Portfolio
