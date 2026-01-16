@@ -1,627 +1,282 @@
 # My-Portfolio
-My Portfolio Website - Comprehensive Guide
-📋 Table of Contents
-Project Overview
 
-Live Demo
+A clean, responsive personal portfolio built with plain HTML, CSS and JavaScript to showcase education, experience, projects and contact information.
+
+---
+
+Badges
+- Version: 1.1.0
+- Last updated: 2026-01-16
+
+Live demo (if published): https://rakib75464.github.io/My-Portfolio/
+
+Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Quick Start](#quick-start)
+- [Development & Testing](#development--testing)
+- [Deployment](#deployment)
+- [Customization Guide](#customization-guide)
+- [Design Tokens & Styles](#design-tokens--styles)
+- [Troubleshooting](#troubleshooting)
+- [Performance & SEO](#performance--seo)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Changelog](#changelog)
+
+---
+
+Project Overview
+----------------
+My Portfolio is a multi-page, mobile-first portfolio template demonstrating a professional profile, timeline for education & experience, a projects gallery, and a contact form. Built without external UI frameworks for minimal dependencies and fast load times. Includes a persistent dark/light theme, mobile navigation, and basic client-side validations.
+
+Key objectives:
+- Present a clear professional profile
+- Showcase projects and research with visual previews
+- Provide an easy contact mechanism for potential employers/clients
+- Focus on accessibility, responsiveness and performance
 
 Features
+--------
+Design & UX
+- Light/dark theme toggle with preference persistence
+- Responsive layout (mobile-first)
+- Smooth CSS transitions and subtle animations
+- Accessible components (semantic HTML, ARIA where needed, keyboard navigation)
+
+Interactive
+- Mobile hamburger menu
+- Hover states on cards and buttons
+- Simple client-side form validation
+- Active state indicators for navigation
+
+Content & Organization
+- Multi-page layout (Home, Education, Experience, Projects, Contact)
+- Project gallery with screenshots and descriptions
+- Timeline-style education & experience sections
+- Skills matrix / tags
 
 Technology Stack
+----------------
+Frontend:
+- HTML5 (semantic markup)
+- CSS3 (Flexbox, Grid, CSS variables)
+- JavaScript (ES6+) for UI behavior and persistence
+- Google Fonts: Poppins
+
+Tools:
+- VS Code
+- Git & GitHub
+- Browser DevTools
 
 Project Structure
-
-Setup & Installation
-
-Running the Project
-
-Customization Guide
-
-Deployment Guide
-
-File Explanations
-
-Design Specifications
-
-Development Notes
-
-Troubleshooting
-
-Performance Optimization
-
-Future Enhancements
-
-Contributing
-
-License
-
-Project Overview
-My Portfolio Website is a fully responsive, multi-page personal portfolio built with pure HTML, CSS, and JavaScript. It showcases my educational background, professional experiences, technical projects, and research work in a modern, accessible interface. The website features a toggleable dark/light mode, mobile-responsive navigation, and interactive elements.
-
-Key Objectives
-Present professional profile in an organized manner
-
-Showcase technical skills and projects effectively
-
-Provide easy contact mechanism for potential employers/clients
-
-Ensure accessibility and cross-browser compatibility
-
-Maintain fast loading times and responsive design
-
-Features
-Design Features
-Dual Theme System: Switch between light and dark modes with persistent user preference
-
-Responsive Layout: Fully responsive design across all device sizes
-
-Modern UI/UX: Clean, professional interface with smooth animations
-
-Accessibility: ARIA labels, semantic HTML, and keyboard navigation support
-
-Cross-browser Compatibility: Tested on Chrome, Firefox, Safari, and Edge
-
-Interactive Elements
-Mobile-Friendly Navigation: Hamburger menu for smaller screens
-
-Hover Effects: Interactive hover states on buttons and cards
-
-Form Validation: Client-side form validation
-
-Smooth Transitions: CSS animations for enhanced user experience
-
-Active State Indicators: Visual cues for current page
-
-Content Organization
-Multi-page Structure: Separate pages for different content categories
-
-Project Gallery: Visual showcase of projects with descriptions
-
-Timeline Layout: Chronological display of education and experience
-
-Skills Matrix: Organized display of technical competencies
-
-Contact System: Interactive contact form with various meeting options
-
-Technology Stack
-Frontend
-HTML5: Semantic markup, form elements, and structure
-
-CSS3: Flexbox, Grid, CSS Variables, responsive design, animations
-
-JavaScript (ES6): DOM manipulation, event handling, dark mode toggle
-
-Google Fonts: Poppins font family for typography
-
-Development Tools
-VS Code: Primary code editor
-
-Git: Version control
-
-GitHub: Hosting and deployment
-
-Browser DevTools: Debugging and testing
-
-Performance & SEO
-Semantic HTML: For better SEO and accessibility
-
-Optimized Images: Properly sized and formatted images
-
-Minimal Dependencies: No external libraries for faster loading
-
-Responsive Images: srcset and appropriate sizing
-
-📁 Project Structure
-text
+-----------------
 My-Portfolio/
 │
 ├── index.html                    # Main landing page (Home)
 ├── README.md                     # This documentation file
 │
 ├── CSS/
-│   └── main.css                  # Complete styling for all pages
+│   └── main.css                  # Global styles and theme variables
 │
 ├── js/
-│   └── main.js                   # JavaScript functionality
+│   └── main.js                   # JS: dark mode, mobile nav, validation
 │
-├── HTML/                         # Individual page files
-│   ├── education.html            # Education history page
-│   ├── experience.html           # Professional experience page
-│   ├── project.html              # Projects & research showcase
-│   └── contactme.html            # Contact form page
+├── HTML/                         # Other pages
+│   ├── education.html
+│   ├── experience.html
+│   ├── project.html
+│   └── contactme.html
 │
-└── images/                       # Image assets directory
-    ├── profile_photo.jpg         # Professional profile image
-    ├── Facebook                  # Facebook social icon
-    ├── images.jpeg               # GitHub social icon
-    ├── education_logos/          # Educational institution logos
-    ├── project_screenshots/      # Project demonstration images
-    └── experience_images/        # Experience-related images
-Setup & Installation
+└── images/                       # Assets
+    ├── profile_photo.jpg
+    ├── social/                   # social icons (facebook, github, etc.)
+    ├── education_logos/
+    ├── project_screenshots/
+    └── experience_images/
+
+Quick Start
+-----------
 Prerequisites
-Code Editor: VS Code, Sublime Text, or any modern editor
+- A modern code editor (VS Code recommended)
+- A modern browser (Chrome, Firefox, Safari, Edge)
+- Git (optional, for cloning)
 
-Web Browser: Chrome, Firefox, Safari, or Edge (latest versions)
-
-Git: For version control (optional)
-
-Local Server: Python/Node.js for local hosting (recommended)
-
-Step-by-Step Setup
-Option 1: Direct File Opening (Quick Start)
-bash
-# Clone the repository
+Clone and run locally (quick)
+```bash
 git clone https://github.com/rakib75464/My-Portfolio.git
-
-# Navigate to project directory
 cd My-Portfolio
+# Open index.html in your browser, or run a simple server:
+python -m http.server 8000
+# then visit http://localhost:8000
+```
 
-# Open the main file in your browser
-# Simply double-click index.html or open with browser
-Option 2: Using a Local Server (Recommended)
-bash
-# Navigate to project folder
-cd My-Portfolio
-
-# Choose one of these local server options:
-
+Recommended local server options
+```bash
 # Python 3
 python -m http.server 8000
 
-# Python 2
-python -m SimpleHTTPServer 8000
+# Node (http-server)
+npx http-server -p 8000
 
 # PHP
 php -S localhost:8000
+```
 
-# Node.js with http-server (install via npm install -g http-server)
-http-server -p 8000
-
-# Node.js with serve
-npx serve .
 Why use a local server?
+- Avoids CORS/file:// restrictions
+- Proper asset path resolution
+- Enables testing form submissions and relative routing
 
-Avoids CORS issues with file:// protocol
+Development & Testing
+---------------------
+- Use the browser DevTools to inspect layout and look for console errors
+- Test responsiveness using device emulation or by resizing the browser
+- Verify keyboard navigation and screen reader labels for accessibility
+- Recommended browser versions:
+  - Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
 
-Enables proper path resolution
-
-Simulates real web server environment
-
-Allows testing of form submissions
-
-Running the Project
-Development Mode
-Start local server as shown above
-
-Open browser and navigate to: http://localhost:8000
-
-The portfolio homepage will load automatically
-
-Use navigation to explore different sections
-
-Testing Features
-Responsive Design: Resize browser or use DevTools device emulation
-
-Dark Mode: Click the moon/sun icon in top-right corner
-
-Mobile Menu: Resize below 768px width to see hamburger menu
-
-Form Validation: Try submitting empty fields in contact form
-
-Hover Effects: Hover over buttons, skill items, and project cards
-
-Browser Compatibility Testing
-The website is tested on:
-
-Chrome 90+
-
-Firefox 88+
-
-Safari 14+
-
-Edge 90+
-
-Mobile Chrome/Safari
-
-Customization Guide
-1. Personal Information
-Edit the following files:
-
-index.html: Update name, bio, skills list
-
-All HTML files in /HTML/: Update navigation and footer
-
-Update profile image in /images/Image (1).jpeg
-
-2. Content Updates
-Education: Edit /HTML/education.html with your academic details
-
-Experience: Edit /HTML/experience.html with your professional history
-
-Projects: Edit /HTML/project.html with your work portfolio
-
-Contact: Update social links in all footer sections
-
-3. Styling Changes
-Edit /CSS/main.css for all visual changes
-
-Modify CSS variables in :root section for theme colors
-
-Update responsive breakpoints in @media queries
-
-4. Image Replacement
-Replace images in /images/ folder:
-
-Use consistent naming convention
-
-Optimize images (recommended: WebP format, max 500KB)
-
-Maintain aspect ratios (profile: 1:1, project cards: 16:9)
-
-5. JavaScript Customization
-Edit /js/main.js for:
-
-Additional interactive features
-
-Form submission handling
-
-Enhanced animations
-
-Deployment Guide
-GitHub Pages (Free & Recommended)
-bash
-# 1. Create GitHub repository
-# 2. Push your code
+Deployment
+----------
+GitHub Pages (recommended)
+```bash
 git init
 git add .
 git commit -m "Initial portfolio deployment"
 git branch -M main
 git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
 git push -u origin main
+# Then enable Pages in repo Settings -> Pages, branch: main, folder: /
+```
 
-# 3. Go to repository Settings → Pages
-# 4. Select branch: main, folder: / (root)
-# 5. Your site will be available at: https://YOUR-USERNAME.github.io/YOUR-REPO/
-Netlify (Alternative)
-Drag and drop project folder to Netlify dashboard
+Netlify / Vercel
+- Drag-and-drop deploy or connect repository for CI/CD and automatic builds.
+- Provide HTTPS, custom domain, and redirects.
 
-Or connect GitHub repository
+Customization Guide
+-------------------
+1. Personal Info
+   - Update name, bio and hero content in `index.html`
+   - Replace `images/profile_photo.jpg` with your photo (1:1 ratio recommended)
 
-Automatic HTTPS and custom domain support
+2. Pages & Content
+   - Education: `HTML/education.html`
+   - Experience: `HTML/experience.html`
+   - Projects: `HTML/project.html` (update project cards and screenshots)
+   - Contact: `HTML/contactme.html` (update email, links and contact text)
 
-Continuous deployment from Git
+3. Styles
+   - Edit `CSS/main.css`
+   - Theme colors: change CSS variables in the `:root` section
+   - Breakpoints: adjust `@media` queries if needed
 
-Vercel (For Advanced Features)
-Import from GitHub
+4. Scripts
+   - `js/main.js` contains theme toggle, mobile menu logic and form validation
+   - Add or modularize code for additional behaviors
 
-Supports serverless functions
+Images & Optimization
+- Use WebP where possible and provide fallbacks
+- Keep web-optimized images (< 500 KB recommended)
+- Use `srcset` and `sizes` for responsive images
+- Preserve consistent naming and case sensitivity for file names
 
-Automatic optimization
+Design Tokens & Styles
+----------------------
+Suggested color tokens (examples in `main.css`):
+- Light theme primary: #0066cc
+- Light background: #f5f5f5
+- Dark background: #121212
+- Card background (dark): #1e1e1e
 
-Edge network deployment
+Typography:
+- Poppins (Google Fonts), base: 16px (1rem), line-height: 1.6
 
-File Explanations
-Core Files
-index.html - Main Landing Page
-Homepage with hero section and introduction
-
-Skills showcase with interactive hover effects
-
-Primary navigation entry point
-
-Optimized for SEO with meta tags
-
-/CSS/main.css - Stylesheet
-CSS Variables: Theme colors and typography
-
-Responsive Grid: Flexbox and media queries
-
-Component Styles: Cards, buttons, forms, navigation
-
-Animations: Transitions and hover effects
-
-/js/main.js - JavaScript Logic
-Mobile Navigation Toggle: Show/hide menu on mobile
-
-Dark Mode Toggle: Switch between themes
-
-Event Listeners: Form interactions and UI enhancements
-
-Page Files
-/HTML/education.html
-Timeline of academic achievements
-
-Institution logos and details
-
-Responsive card layout
-
-/HTML/experience.html
-Professional experience showcase
-
-Clickable experience cards
-
-Organization details and roles
-
-/HTML/project.html
-Project portfolio gallery
-
-Filterable project categories (future enhancement)
-
-Detailed project descriptions
-
-/HTML/contactme.html
-Interactive contact form
-
-Multiple input types (text, email, radio, checkbox, date)
-
-Form validation and submission handling
-
-Design Specifications
-Color Palette
-css
-Light Theme:
-- Primary Blue: #0066cc
-- Primary Dark: #004080
-- Highlight Red: #cc0000
-- Background: #f5f5f5
-- Card Background: #ffffff
-- Text: #333333
-
-Dark Theme:
-- Background: #121212
-- Card Background: #1e1e1e
-- Text: #dddddd
-- Light Text: #bbbbbb
-Typography
-Primary Font: Poppins (Google Fonts)
-
-Weights: 300 (light), 600 (semi-bold)
-
-Logo Font: Georgia (serif) + Brush Script MT (cursive)
-
-Base Font Size: 16px (1rem)
-
-Line Height: 1.6 for readability
-
-Spacing System
-Base Unit: 10px
-
-Padding: 15-30px for containers
-
-Margin: 30-60px between sections
-
-Gap: 20-25px for grid items
-
-Breakpoints
-css
-/* Mobile First Approach */
-- Default: 0-479px (mobile)
-- Small Tablet: 480px
-- Tablet: 768px (mobile menu activates)
-- Desktop: 1024px
-- Large Desktop: 1200px (max-width container)
-Components
-Cards: 10px border-radius, subtle shadow, hover effects
-
-Buttons: Primary action buttons with gradient hover
-
-Forms: Clean input fields with focus states
-
-Navigation: Fixed header with smooth transitions
-
-Skill Tags: Pill-shaped with color coding
-
-Development Notes
-Code Architecture
-Separation of Concerns: HTML (structure), CSS (style), JS (behavior)
-
-Reusable Components: Cards, buttons, form elements
-
-CSS Methodology: BEM-like naming convention
-
-JavaScript Patterns: Module pattern for organization
-
-Performance Considerations
-Image Optimization: Proper sizing and format selection
-
-CSS Minification: Remove comments and whitespace for production
-
-JavaScript Loading: Defer attribute for non-critical scripts
-
-Font Loading: Google Fonts with display swap
-
-Accessibility Features
-Semantic HTML: Proper use of header, main, footer, article, section
-
-ARIA Labels: For screen readers
-
-Keyboard Navigation: Focus states and tab order
-
-Color Contrast: WCAG 2.1 AA compliant
+Components:
+- Cards: border-radius 10px, subtle shadow
+- Buttons: clear primary style with hover states
+- Forms: visible focus states and accessible labels
 
 Troubleshooting
-Common Issues & Solutions
-1. Styles Not Loading
-bash
-# Problem: CSS file not found
-# Solution: Check file paths - project uses absolute paths starting with /
+---------------
+Common issues and fixes:
 
-# If deploying to subdirectory, change paths to relative:
+1. Styles not loading
+```html
+<!-- Use relative paths for portability -->
 <link rel="stylesheet" href="CSS/main.css">
-# instead of
-<link rel="stylesheet" href="/CSS/main.css">
-2. JavaScript Errors
-bash
-# Check browser console (F12 → Console)
-# Common fixes:
-# - Ensure script tags have 'defer' attribute
-# - Check element IDs match JavaScript selectors
-# - Verify file paths are correct
-3. Images Not Displaying
-Verify image files exist in /images/ folder
+```
 
-Check file names (case-sensitive on some servers)
+2. JavaScript errors
+- Check Console (F12). Ensure `defer` is used on script tags and selectors match IDs/classes.
 
-Ensure proper file extensions (.jpg, .png, .jpeg)
+3. Images not found
+- Check /images/ folder, filenames and extensions (case-sensitive on some hosts).
 
-Check image permissions
+4. Contact form doesn't send
+- Static hosting requires third-party services (Formspree, Netlify Forms) or a backend.
 
-4. Form Not Working
-Forms use method="post" action="#" - requires backend for full functionality
+Helpful debugging checklist:
+- Inspect Console → Network → Accessibility tree
+- Validate HTML/CSS with validators
 
-For static hosting, consider using Formspree or Netlify Forms
+Performance & SEO
+-----------------
+Current optimizations:
+- Minimize external dependencies
+- Concatenate CSS/JS in production builds
+- Use optimized and responsive images
 
-Implement client-side validation in JavaScript
-
-5. Mobile Menu Issues
-Check viewport meta tag: <meta name="viewport" content="width=device-width, initial-scale=1">
-
-Verify media query breakpoints (768px)
-
-Test touch events on actual mobile devices
-
-Debugging Checklist
-Open browser DevTools (F12)
-
-Check Console for errors
-
-Inspect Network tab for failed loads
-
-Test responsive design in device emulation
-
-Validate HTML at validator.w3.org
-
-Check CSS at jigsaw.w3.org/css-validator
-
-Performance Optimization
-Current Optimizations
-Minimal external dependencies
-
-Optimized image sizes
-
-CSS and JS in single files
-
-Deferred JavaScript loading
-
-Proper caching headers (if configured)
-
-Further Optimization Options
-Image Optimization
-
-bash
-# Convert to WebP format
-# Implement lazy loading
-# Use srcset for responsive images
-Code Splitting
-
-javascript
-// Consider splitting CSS per page for larger sites
-// Load JS modules on demand
-Caching Strategy
-
-Implement service worker for offline access
-
-Set appropriate cache-control headers
-
-Use CDN for static assets
+Further improvements:
+- Implement lazy loading for heavy images (`loading="lazy"`)
+- Add service worker for PWA support
+- Add structured data (JSON-LD) and sitemap.xml for better SEO
 
 Future Enhancements
-Planned Features
-Backend Integration
-
-Contact form submission to email/database
-
-User authentication for admin panel
-
-Project comments/feedback system
-
-Advanced Features
-
-Project filtering by category/technology
-
-Blog section for articles
-
-PDF resume download
-
-Language switching (multi-language support)
-
-Performance Improvements
-
-PWA capabilities
-
-Advanced caching strategies
-
-Image lazy loading
-
-Analytics & SEO
-
-Google Analytics integration
-
-SEO optimization with structured data
-
-Sitemap generation
+-------------------
+Planned:
+- Backend integration for contact form
+- Project filtering & tagging
+- PDF resume download
+- Multi-language support
+- PWA & offline caching
+- Analytics and improved SEO
 
 Contributing
-While this is a personal portfolio project, contributions are welcome for:
+------------
+This is primarily a personal portfolio, but suggestions and improvements are welcome.
 
-Bug Reports: Open an issue with detailed reproduction steps
+Preferred contribution flow:
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/awesome`
+3. Commit: `git commit -m "Add awesome feature"`
+4. Push: `git push origin feature/awesome`
+5. Open a Pull Request with a clear description and screenshots if applicable
 
-Feature Requests: Suggest new features with use cases
+Please open issues for bugs or feature requests with steps to reproduce and environment details.
 
-Code Improvements: Pull requests for performance/security fixes
+License
+-------
+© 2025–2026 Md Rakib Hasan. All rights reserved.
 
-Documentation: Improvements to this README or code comments
+- Personal use and learning: permitted
+- Redistribution as-is for personal use: permitted
+- Commercial redistribution/republishing as your own template: not permitted without explicit permission
 
-Contribution Process:
+Contact
+-------
+- GitHub: [rakib75464](https://github.com/rakib75464)
+- Email: rakibss974@gmail.com
+- Facebook: Rakib Hasan
 
-Fork the repository
+Changelog
+---------
+- 1.1.0 — 2026-01-16: README restructure, clarity improvements, updated instructions and date
+- 1.0.0 — 2025-01: Initial public release
 
-Create a feature branch (git checkout -b feature/amazing-feature)
-
-Commit changes (git commit -m 'Add amazing feature')
-
-Push to branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-📄 License
-© 2025 Md Rakib Hasan. All rights reserved.
-
-Usage Rights:
-
-You may use this code as a template for your personal portfolio
-
-Attribution is appreciated but not required
-
-Do not redistribute as your own template for commercial purposes
-
-Modify and customize according to your needs
-
-For Commercial Use:
-Contact the author for licensing options if you wish to use this as a template for commercial projects.
-
-📞 Support & Contact
-For questions, support, or collaboration opportunities:
-
-GitHub: rakib75464
-
-Facebook: Rakib Hasan
-
-Email: rakibss974@gmail.com
-
-Quick Start Summary
-Clone: git clone https://github.com/rakib75464/My-Portfolio.git
-
-Navigate: cd My-Portfolio
-
-Serve: python -m http.server 8000
-
-Open: http://localhost:8000
-
-Customize: Update content in HTML files and images
-
-Deploy: Push to GitHub and enable GitHub Pages
-
-Last Updated: January 2025
-Version: 1.0.0
-Status: Production Ready
+Acknowledgements
+----------------
+Thanks to open-source authors and resources that help build and improve personal portfolios and front-end practices.
